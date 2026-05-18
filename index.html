@@ -29,7 +29,6 @@
     min-height: 100vh;
   }
 
-  /* ── NAVBAR ── */
   nav {
     background: #fff;
     display: flex;
@@ -42,22 +41,9 @@
     top: 0;
     z-index: 100;
   }
-  .nav-logo {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
-  .nav-logo svg {
-    width: 50px;
-    height: 30px;
-    fill: var(--dark);
-  }
-  .nav-links {
-    display: flex;
-    align-items: center;
-    gap: 24px;
-    list-style: none;
-  }
+  .nav-logo { display: flex; align-items: center; gap: 10px; }
+  .nav-logo svg { width: 50px; height: 30px; fill: var(--dark); }
+  .nav-links { display: flex; align-items: center; gap: 24px; list-style: none; }
   .nav-links a {
     text-decoration: none;
     font-family: 'Oswald', sans-serif;
@@ -70,7 +56,6 @@
   .nav-links a:hover { color: var(--gold); }
   .nav-links a.active { color: var(--gold); font-weight: 600; }
 
-  /* ── HERO ── */
   .hero {
     background: linear-gradient(180deg, #5a5a40 0%, #3a3a28 60%, #2a2a1e 100%);
     text-align: center;
@@ -105,16 +90,8 @@
   }
   .hero h2 span { color: var(--gold-light); }
 
-  /* ── CTA BAND ── */
-  .cta-band {
-    background: var(--dark);
-    padding: 0 40px 40px;
-  }
-  .cta-btn-wrap {
-    display: flex;
-    justify-content: center;
-    transform: translateY(-24px);
-  }
+  .cta-band { background: var(--dark); padding: 0 40px 40px; }
+  .cta-btn-wrap { display: flex; justify-content: center; transform: translateY(-24px); }
   .cta-btn {
     background: linear-gradient(135deg, var(--gold) 0%, var(--gold-light) 50%, var(--gold) 100%);
     color: var(--dark);
@@ -130,12 +107,8 @@
     transition: all 0.2s;
     box-shadow: 0 4px 20px rgba(184,146,42,0.4);
   }
-  .cta-btn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 30px rgba(184,146,42,0.6);
-  }
+  .cta-btn:hover { transform: translateY(-2px); box-shadow: 0 8px 30px rgba(184,146,42,0.6); }
 
-  /* ── 4 PILLARS ── */
   .pillars {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -144,74 +117,41 @@
     max-width: 1200px;
     margin: 0 auto;
   }
-  .pillar {
-    background: var(--dark);
-    padding: 30px 28px;
-  }
+  .pillar { background: var(--dark); padding: 30px 28px; }
   .pillar-icon {
-    width: 52px;
-    height: 52px;
+    width: 52px; height: 52px;
     border: 2px solid var(--gold);
     border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: flex; align-items: center; justify-content: center;
     margin-bottom: 16px;
   }
   .pillar-icon svg { width: 26px; height: 26px; stroke: var(--gold); fill: none; stroke-width: 1.5; }
   .pillar h3 {
     font-family: 'Oswald', sans-serif;
-    font-size: 18px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
+    font-size: 18px; letter-spacing: 2px; text-transform: uppercase;
     color: var(--white);
     border-left: 3px solid var(--gold);
-    padding-left: 10px;
-    margin-bottom: 12px;
+    padding-left: 10px; margin-bottom: 12px;
   }
-  .pillar p {
-    font-size: 13px;
-    color: var(--light-gray);
-    line-height: 1.6;
-    margin-bottom: 20px;
-  }
+  .pillar p { font-size: 13px; color: var(--light-gray); line-height: 1.6; margin-bottom: 20px; }
   .pillar-btn {
-    width: 100%;
-    background: transparent;
-    border: 1.5px solid var(--white);
-    color: var(--white);
-    font-family: 'Oswald', sans-serif;
-    font-size: 13px;
-    letter-spacing: 2px;
-    padding: 10px;
-    text-transform: uppercase;
-    cursor: pointer;
-    transition: all 0.2s;
+    width: 100%; background: transparent;
+    border: 1.5px solid var(--white); color: var(--white);
+    font-family: 'Oswald', sans-serif; font-size: 13px; letter-spacing: 2px;
+    padding: 10px; text-transform: uppercase; cursor: pointer; transition: all 0.2s;
   }
-  .pillar-btn:hover {
-    background: var(--gold);
-    border-color: var(--gold);
-    color: var(--dark);
-  }
+  .pillar-btn:hover { background: var(--gold); border-color: var(--gold); color: var(--dark); }
 
-  /* ── JELENTKEZÉSI ŰR LAP MODAL ── */
   .modal-overlay {
-    display: none;
-    position: fixed;
-    inset: 0;
-    background: rgba(0,0,0,0.85);
-    z-index: 1000;
-    overflow-y: auto;
-    padding: 20px;
+    display: none; position: fixed; inset: 0;
+    background: rgba(0,0,0,0.85); z-index: 1000;
+    overflow-y: auto; padding: 20px;
   }
   .modal-overlay.active { display: flex; align-items: flex-start; justify-content: center; }
   .modal {
-    background: #f5f2ec;
-    color: #1a1a1a;
-    width: 100%;
-    max-width: 760px;
-    padding: 32px 40px;
-    margin: auto;
+    background: #f5f2ec; color: #1a1a1a;
+    width: 100%; max-width: 760px;
+    padding: 32px 40px; margin: auto;
     border-top: 6px solid var(--dark);
     position: relative;
     animation: slideDown 0.3s ease;
@@ -219,441 +159,253 @@
   @keyframes slideDown { from { opacity:0; transform: translateY(-20px); } to { opacity:1; transform: translateY(0); } }
 
   .modal-close {
-    position: absolute;
-    top: 16px;
-    right: 20px;
-    background: var(--dark);
-    color: #fff;
-    border: none;
-    width: 32px;
-    height: 32px;
-    font-size: 18px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    position: absolute; top: 16px; right: 20px;
+    background: var(--dark); color: #fff; border: none;
+    width: 32px; height: 32px; font-size: 18px; cursor: pointer;
+    display: flex; align-items: center; justify-content: center;
   }
   .modal h2 {
-    font-family: 'Oswald', sans-serif;
-    text-align: center;
-    font-size: 16px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    margin-bottom: 4px;
+    font-family: 'Oswald', sans-serif; text-align: center;
+    font-size: 16px; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 4px;
   }
-  .modal .subtitle {
-    text-align: center;
-    font-size: 12px;
-    color: #555;
-    margin-bottom: 20px;
-  }
+  .modal .subtitle { text-align: center; font-size: 12px; color: #555; margin-bottom: 20px; }
 
-  /* Form sections */
   .form-section-title {
-    background: var(--dark);
-    color: #fff;
-    font-family: 'Oswald', sans-serif;
-    font-size: 13px;
-    letter-spacing: 2px;
-    text-align: center;
-    padding: 6px;
-    text-transform: uppercase;
-    margin: 16px 0 10px;
-    border: 1px solid #333;
+    background: var(--dark); color: #fff;
+    font-family: 'Oswald', sans-serif; font-size: 13px; letter-spacing: 2px;
+    text-align: center; padding: 6px; text-transform: uppercase;
+    margin: 16px 0 10px; border: 1px solid #333;
   }
-  .form-row {
-    display: flex;
-    gap: 8px;
-    margin-bottom: 6px;
-  }
-  .form-field {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-  }
-  .form-field label {
-    font-size: 10px;
-    color: #555;
-    margin-bottom: 2px;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-  }
+  .form-row { display: flex; gap: 8px; margin-bottom: 6px; }
+  .form-field { display: flex; flex-direction: column; flex: 1; }
+  .form-field label { font-size: 10px; color: #555; margin-bottom: 2px; text-transform: uppercase; letter-spacing: 0.5px; }
   .form-field input, .form-field select {
-    border: 1px solid #999;
-    padding: 5px 8px;
-    font-size: 13px;
-    font-family: 'Source Sans 3', sans-serif;
-    background: #fff;
-    color: #1a1a1a;
-    outline: none;
+    border: 1px solid #999; padding: 5px 8px; font-size: 13px;
+    font-family: 'Source Sans 3', sans-serif; background: #fff; color: #1a1a1a; outline: none;
   }
   .form-field input:focus, .form-field select:focus {
-    border-color: var(--gold);
-    box-shadow: 0 0 0 2px rgba(184,146,42,0.2);
+    border-color: var(--gold); box-shadow: 0 0 0 2px rgba(184,146,42,0.2);
   }
   .form-field.w2 { flex: 2; }
   .form-field.w3 { flex: 3; }
 
-  /* Language grid */
-  .lang-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    gap: 4px;
-    margin-bottom: 8px;
-    font-size: 11px;
-  }
-  .lang-header {
-    background: #e8e4da;
-    text-align: center;
-    padding: 3px;
-    font-size: 10px;
-    font-weight: 600;
-    grid-column: span 2;
-  }
-  .lang-check {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .lang-check input[type=checkbox] { width: 14px; height: 14px; }
-
   .submit-btn {
-    width: 100%;
-    margin-top: 20px;
-    background: var(--dark);
-    color: var(--gold-light);
-    border: none;
-    font-family: 'Oswald', sans-serif;
-    font-size: 16px;
-    letter-spacing: 3px;
-    padding: 14px;
-    text-transform: uppercase;
-    cursor: pointer;
-    transition: background 0.2s;
+    width: 100%; margin-top: 20px;
+    background: var(--dark); color: var(--gold-light); border: none;
+    font-family: 'Oswald', sans-serif; font-size: 16px; letter-spacing: 3px;
+    padding: 14px; text-transform: uppercase; cursor: pointer; transition: background 0.2s;
   }
   .submit-btn:hover { background: var(--olive); }
 
-  /* ── ADMIN LOGIN ── */
-  #admin-btn {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background: var(--mid);
-    border: 1px solid var(--border);
-    color: var(--light-gray);
-    width: 44px;
-    height: 44px;
+  /* ── DISCORD SUCCESS MODAL ── */
+  #discord-modal {
+    display: none; position: fixed; inset: 0;
+    background: rgba(0,0,0,0.92); z-index: 9000;
+    align-items: center; justify-content: center; padding: 20px;
+  }
+  #discord-modal.active { display: flex; }
+  .discord-box {
+    background: #1e1f22;
+    border: 2px solid var(--gold);
+    border-top: 6px solid var(--gold);
+    width: 100%; max-width: 460px;
+    padding: 44px 40px 36px;
+    text-align: center;
+    animation: slideDown 0.3s ease;
+  }
+  .discord-checkmark {
+    width: 70px; height: 70px;
+    background: rgba(45,122,45,0.15);
+    border: 2px solid #2d7a2d;
     border-radius: 50%;
-    font-size: 18px;
-    cursor: pointer;
-    z-index: 500;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0.6;
-    transition: opacity 0.2s;
+    display: flex; align-items: center; justify-content: center;
+    margin: 0 auto 22px;
+    font-size: 32px;
+    color: #6fc46f;
+  }
+  .discord-box h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 24px; letter-spacing: 3px; text-transform: uppercase;
+    color: var(--white); margin-bottom: 14px;
+  }
+  .discord-box .discord-text {
+    font-size: 14px; color: var(--light-gray); line-height: 1.75; margin-bottom: 28px;
+  }
+  .discord-box .discord-text strong { color: var(--gold-light); }
+  .discord-divider { border: none; border-top: 1px solid #333; margin: 0 0 26px; }
+  .discord-join-btn {
+    display: flex; align-items: center; justify-content: center; gap: 12px;
+    background: #5865F2; color: #fff;
+    font-family: 'Oswald', sans-serif; font-size: 17px; letter-spacing: 2px;
+    padding: 15px 32px; text-decoration: none; text-transform: uppercase;
+    width: 100%; border: none; cursor: pointer;
+    transition: background 0.2s, transform 0.15s;
+  }
+  .discord-join-btn:hover { background: #4752c4; transform: translateY(-2px); }
+  .discord-join-btn svg { width: 24px; height: 24px; fill: #fff; flex-shrink: 0; }
+  .discord-close-hint {
+    margin-top: 16px; font-size: 11px; color: #555;
+    letter-spacing: 1px; cursor: pointer; text-transform: uppercase; transition: color 0.2s;
+  }
+  .discord-close-hint:hover { color: var(--light-gray); }
+
+  #admin-btn {
+    position: fixed; bottom: 20px; right: 20px;
+    background: var(--mid); border: 1px solid var(--border);
+    color: var(--light-gray); width: 44px; height: 44px;
+    border-radius: 50%; font-size: 18px; cursor: pointer;
+    z-index: 500; display: flex; align-items: center; justify-content: center;
+    opacity: 0.6; transition: opacity 0.2s;
   }
   #admin-btn:hover { opacity: 1; }
 
   #admin-login-modal {
-    display: none;
-    position: fixed;
-    inset: 0;
-    background: rgba(0,0,0,0.9);
-    z-index: 2000;
-    align-items: center;
-    justify-content: center;
+    display: none; position: fixed; inset: 0;
+    background: rgba(0,0,0,0.9); z-index: 2000;
+    align-items: center; justify-content: center;
   }
   #admin-login-modal.active { display: flex; }
 
   .admin-login-box {
-    background: var(--mid);
-    border: 1px solid var(--gold);
-    padding: 40px;
-    width: 360px;
-    text-align: center;
-    position: relative;
+    background: var(--mid); border: 1px solid var(--gold);
+    padding: 40px; width: 360px; text-align: center; position: relative;
   }
   .admin-login-box h3 {
-    font-family: 'Oswald', sans-serif;
-    font-size: 20px;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    color: var(--gold-light);
-    margin-bottom: 24px;
+    font-family: 'Oswald', sans-serif; font-size: 20px;
+    letter-spacing: 3px; text-transform: uppercase;
+    color: var(--gold-light); margin-bottom: 24px;
   }
   .admin-input {
-    width: 100%;
-    background: #111;
-    border: 1px solid var(--border);
-    color: var(--white);
-    padding: 10px 14px;
-    font-family: 'Source Sans 3', sans-serif;
-    font-size: 14px;
-    margin-bottom: 12px;
-    outline: none;
+    width: 100%; background: #111; border: 1px solid var(--border);
+    color: var(--white); padding: 10px 14px;
+    font-family: 'Source Sans 3', sans-serif; font-size: 14px;
+    margin-bottom: 12px; outline: none;
   }
   .admin-input:focus { border-color: var(--gold); }
   .admin-login-btn {
-    width: 100%;
-    background: var(--gold);
-    color: var(--dark);
-    border: none;
-    font-family: 'Oswald', sans-serif;
-    font-size: 15px;
-    letter-spacing: 2px;
-    padding: 12px;
-    text-transform: uppercase;
-    cursor: pointer;
-    margin-top: 4px;
+    width: 100%; background: var(--gold); color: var(--dark); border: none;
+    font-family: 'Oswald', sans-serif; font-size: 15px; letter-spacing: 2px;
+    padding: 12px; text-transform: uppercase; cursor: pointer;
   }
   .admin-login-btn:hover { background: var(--gold-light); }
   .admin-error { color: #e05555; font-size: 12px; margin-top: 8px; display: none; }
 
-  /* ── ADMIN DASHBOARD ── */
   #admin-panel {
-    display: none;
-    position: fixed;
-    inset: 0;
-    background: var(--darker);
-    z-index: 3000;
-    overflow-y: auto;
-    flex-direction: column;
+    display: none; position: fixed; inset: 0;
+    background: var(--darker); z-index: 3000;
+    overflow-y: auto; flex-direction: column;
   }
   #admin-panel.active { display: flex; }
 
   .admin-nav {
-    background: var(--dark);
-    border-bottom: 2px solid var(--gold);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 32px;
-    height: 56px;
-    position: sticky;
-    top: 0;
-    z-index: 10;
+    background: var(--dark); border-bottom: 2px solid var(--gold);
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 0 32px; height: 56px; position: sticky; top: 0; z-index: 10;
   }
   .admin-nav h1 {
-    font-family: 'Oswald', sans-serif;
-    font-size: 18px;
-    letter-spacing: 3px;
-    color: var(--gold-light);
-    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif; font-size: 18px;
+    letter-spacing: 3px; color: var(--gold-light); text-transform: uppercase;
   }
   .admin-nav-actions { display: flex; gap: 12px; }
   .admin-nav button {
-    background: transparent;
-    border: 1px solid var(--border);
-    color: var(--light-gray);
-    font-family: 'Oswald', sans-serif;
-    font-size: 13px;
-    letter-spacing: 1px;
-    padding: 7px 16px;
-    cursor: pointer;
-    text-transform: uppercase;
-    transition: all 0.2s;
+    background: transparent; border: 1px solid var(--border);
+    color: var(--light-gray); font-family: 'Oswald', sans-serif;
+    font-size: 13px; letter-spacing: 1px; padding: 7px 16px;
+    cursor: pointer; text-transform: uppercase; transition: all 0.2s;
   }
   .admin-nav button:hover { border-color: var(--gold); color: var(--gold); }
   .admin-nav button.logout { border-color: var(--red-alert); color: #e05555; }
 
   .admin-body { padding: 32px; }
-  .admin-stats {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 16px;
-    margin-bottom: 32px;
-  }
+  .admin-stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-bottom: 32px; }
   .stat-card {
-    background: var(--dark);
-    border: 1px solid var(--border);
-    border-left: 3px solid var(--gold);
-    padding: 20px;
+    background: var(--dark); border: 1px solid var(--border);
+    border-left: 3px solid var(--gold); padding: 20px;
   }
-  .stat-card .stat-num {
-    font-family: 'Oswald', sans-serif;
-    font-size: 36px;
-    color: var(--gold-light);
-  }
-  .stat-card .stat-label {
-    font-size: 11px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    color: var(--light-gray);
-    margin-top: 4px;
-  }
+  .stat-card .stat-num { font-family: 'Oswald', sans-serif; font-size: 36px; color: var(--gold-light); }
+  .stat-card .stat-label { font-size: 11px; letter-spacing: 1px; text-transform: uppercase; color: var(--light-gray); margin-top: 4px; }
 
-  .admin-table-wrap {
-    background: var(--dark);
-    border: 1px solid var(--border);
-  }
+  .admin-table-wrap { background: var(--dark); border: 1px solid var(--border); }
   .admin-table-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 16px 20px;
-    border-bottom: 1px solid var(--border);
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 16px 20px; border-bottom: 1px solid var(--border);
   }
   .admin-table-header h2 {
-    font-family: 'Oswald', sans-serif;
-    font-size: 16px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    color: var(--gold-light);
+    font-family: 'Oswald', sans-serif; font-size: 16px;
+    letter-spacing: 2px; text-transform: uppercase; color: var(--gold-light);
   }
   .filter-btns { display: flex; gap: 8px; }
   .filter-btn {
-    background: transparent;
-    border: 1px solid var(--border);
-    color: var(--light-gray);
-    font-size: 12px;
-    padding: 6px 12px;
-    cursor: pointer;
-    font-family: 'Oswald', sans-serif;
-    letter-spacing: 1px;
-    transition: all 0.2s;
+    background: transparent; border: 1px solid var(--border);
+    color: var(--light-gray); font-size: 12px; padding: 6px 12px;
+    cursor: pointer; font-family: 'Oswald', sans-serif; letter-spacing: 1px; transition: all 0.2s;
   }
   .filter-btn.active, .filter-btn:hover { background: var(--gold); color: var(--dark); border-color: var(--gold); }
 
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    font-size: 13px;
-  }
+  table { width: 100%; border-collapse: collapse; font-size: 13px; }
   thead tr { background: var(--mid); }
   thead th {
-    padding: 10px 16px;
-    text-align: left;
-    font-family: 'Oswald', sans-serif;
-    font-size: 11px;
-    letter-spacing: 1.5px;
-    text-transform: uppercase;
-    color: var(--light-gray);
-    border-bottom: 1px solid var(--border);
+    padding: 10px 16px; text-align: left;
+    font-family: 'Oswald', sans-serif; font-size: 11px; letter-spacing: 1.5px;
+    text-transform: uppercase; color: var(--light-gray); border-bottom: 1px solid var(--border);
   }
-  tbody tr {
-    border-bottom: 1px solid var(--border);
-    transition: background 0.15s;
-  }
+  tbody tr { border-bottom: 1px solid var(--border); transition: background 0.15s; }
   tbody tr:hover { background: rgba(184,146,42,0.05); }
   tbody td { padding: 10px 16px; }
-  .badge {
-    display: inline-block;
-    padding: 2px 10px;
-    font-size: 10px;
-    font-family: 'Oswald', sans-serif;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-  }
+  .badge { display: inline-block; padding: 2px 10px; font-size: 10px; font-family: 'Oswald', sans-serif; letter-spacing: 1px; text-transform: uppercase; }
   .badge-new { background: rgba(184,146,42,0.2); color: var(--gold-light); border: 1px solid var(--gold); }
   .badge-ok { background: rgba(40,120,40,0.2); color: #6fc46f; border: 1px solid #2d7a2d; }
   .badge-no { background: rgba(139,26,26,0.2); color: #e07070; border: 1px solid var(--red-alert); }
 
   .action-btn {
-    background: transparent;
-    border: 1px solid var(--border);
-    color: var(--light-gray);
-    font-size: 11px;
-    padding: 4px 10px;
-    cursor: pointer;
-    font-family: 'Oswald', sans-serif;
-    letter-spacing: 1px;
-    margin-right: 4px;
-    transition: all 0.2s;
+    background: transparent; border: 1px solid var(--border);
+    color: var(--light-gray); font-size: 11px; padding: 4px 10px;
+    cursor: pointer; font-family: 'Oswald', sans-serif; letter-spacing: 1px;
+    margin-right: 4px; transition: all 0.2s;
   }
   .action-btn:hover { border-color: var(--gold); color: var(--gold); }
   .action-btn.approve:hover { border-color: #2d7a2d; color: #6fc46f; }
   .action-btn.reject:hover { border-color: var(--red-alert); color: #e07070; }
 
-  /* Detail modal */
   #detail-modal {
-    display: none;
-    position: fixed;
-    inset: 0;
-    background: rgba(0,0,0,0.85);
-    z-index: 4000;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
+    display: none; position: fixed; inset: 0;
+    background: rgba(0,0,0,0.85); z-index: 4000;
+    align-items: center; justify-content: center; padding: 20px;
   }
   #detail-modal.active { display: flex; }
   .detail-box {
-    background: #f5f2ec;
-    color: #1a1a1a;
-    width: 100%;
-    max-width: 700px;
-    max-height: 90vh;
-    overflow-y: auto;
-    padding: 32px 40px;
-    position: relative;
-    border-top: 6px solid var(--dark);
+    background: #f5f2ec; color: #1a1a1a;
+    width: 100%; max-width: 700px; max-height: 90vh;
+    overflow-y: auto; padding: 32px 40px;
+    position: relative; border-top: 6px solid var(--dark);
   }
   .detail-box h2 {
-    font-family: 'Oswald', sans-serif;
-    font-size: 16px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    text-align: center;
-    margin-bottom: 20px;
+    font-family: 'Oswald', sans-serif; font-size: 16px;
+    letter-spacing: 2px; text-transform: uppercase; text-align: center; margin-bottom: 20px;
   }
-  .detail-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 8px 24px;
-    margin-bottom: 12px;
-  }
+  .detail-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px 24px; margin-bottom: 12px; }
   .detail-field { font-size: 13px; }
-  .detail-field .lbl {
-    font-size: 10px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    color: #666;
-  }
-  .detail-field .val {
-    font-weight: 600;
-    border-bottom: 1px solid #ccc;
-    padding-bottom: 2px;
-    min-height: 20px;
-  }
-  .detail-actions {
-    display: flex;
-    gap: 12px;
-    margin-top: 20px;
-  }
+  .detail-field .lbl { font-size: 10px; text-transform: uppercase; letter-spacing: 1px; color: #666; }
+  .detail-field .val { font-weight: 600; border-bottom: 1px solid #ccc; padding-bottom: 2px; min-height: 20px; }
+  .detail-actions { display: flex; gap: 12px; margin-top: 20px; }
   .detail-actions button {
-    flex: 1;
-    padding: 10px;
-    font-family: 'Oswald', sans-serif;
-    font-size: 14px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    cursor: pointer;
-    border: none;
+    flex: 1; padding: 10px; font-family: 'Oswald', sans-serif;
+    font-size: 14px; letter-spacing: 2px; text-transform: uppercase; cursor: pointer; border: none;
   }
   .btn-approve { background: #2d7a2d; color: #fff; }
   .btn-reject { background: var(--red-alert); color: #fff; }
   .btn-close-detail { background: var(--dark); color: var(--gold-light); }
 
-  /* Toast */
   #toast {
-    position: fixed;
-    bottom: 24px;
-    left: 50%;
+    position: fixed; bottom: 24px; left: 50%;
     transform: translateX(-50%) translateY(80px);
-    background: var(--dark);
-    border: 1px solid var(--gold);
-    color: var(--gold-light);
-    font-family: 'Oswald', sans-serif;
-    font-size: 14px;
-    letter-spacing: 2px;
-    padding: 12px 32px;
-    z-index: 9999;
-    transition: transform 0.3s ease;
-    pointer-events: none;
+    background: var(--dark); border: 1px solid var(--gold);
+    color: var(--gold-light); font-family: 'Oswald', sans-serif;
+    font-size: 14px; letter-spacing: 2px; padding: 12px 32px;
+    z-index: 9999; transition: transform 0.3s ease; pointer-events: none;
   }
   #toast.show { transform: translateX(-50%) translateY(0); }
 
-  /* Loading */
   .loading { text-align: center; padding: 40px; color: var(--light-gray); font-family: 'Oswald', sans-serif; letter-spacing: 2px; }
 
   @media (max-width: 768px) {
@@ -667,7 +419,6 @@
 </head>
 <body>
 
-<!-- NAVBAR -->
 <nav>
   <div class="nav-logo">
     <svg viewBox="0 0 80 40" xmlns="http://www.w3.org/2000/svg">
@@ -688,28 +439,24 @@
   </ul>
 </nav>
 
-<!-- HERO -->
 <div class="hero">
   <h1>IRÁNY A SEREG</h1>
   <h2>VÁLASZD HIVATÁSNAK <span>A KATONAI PÁLYÁT!</span></h2>
 </div>
 
-<!-- CTA BAND -->
 <div class="cta-band">
   <div class="cta-btn-wrap">
     <button class="cta-btn" onclick="openModal()">JELENTKEZZ MOST!</button>
   </div>
   <div class="pillars">
-    <!-- JELENTKEZÉS -->
     <div class="pillar">
       <div class="pillar-icon">
-        <svg viewBox="0 0 24 24"><rect x="4" y="3" width="14" height="18" rx="1"/><line x1="8" y1="8" x2="14" y2="8"/><line x1="8" y1="12" x2="14" y2="12"/><line x1="8" y1="16" x2="11" y2="16"/><circle cx="7" cy="6" r="0.5" fill="currentColor" stroke="none"/></svg>
+        <svg viewBox="0 0 24 24"><rect x="4" y="3" width="14" height="18" rx="1"/><line x1="8" y1="8" x2="14" y2="8"/><line x1="8" y1="12" x2="14" y2="12"/><line x1="8" y1="16" x2="11" y2="16"/></svg>
       </div>
       <h3>Jelentkezés</h3>
       <p>Biztos megélhetésre vágysz?<br>Mersz felelősséget vállalni?<br>Nálunk a helyed!<br><br>Ne késlekedj!</p>
       <button class="pillar-btn" onclick="openModal()">Szolgálati Formák</button>
     </div>
-    <!-- ALKALMASSÁG -->
     <div class="pillar">
       <div class="pillar-icon">
         <svg viewBox="0 0 24 24"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
@@ -718,7 +465,6 @@
       <p>Te megfelelnél?<br><br>Próbáld ki magad!<br>Az alkalmassági vizsga az első megmérettetés, vágj bele!</p>
       <button class="pillar-btn" onclick="openModal()">Hivatásos</button>
     </div>
-    <!-- KIKÉPZÉS -->
     <div class="pillar">
       <div class="pillar-icon">
         <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
@@ -727,7 +473,6 @@
       <p>Biztos megélhetésre vágysz?<br>Mersz felelősséget vállalni?<br>Nálunk a helyed!<br><br>Ne késlekedj!</p>
       <button class="pillar-btn" onclick="openModal()">Szerződéses</button>
     </div>
-    <!-- PRÓBAIDŐ -->
     <div class="pillar">
       <div class="pillar-icon">
         <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
@@ -739,9 +484,7 @@
   </div>
 </div>
 
-<!-- ══════════════════════════════════
-     JELENTKEZÉSI ŰR LAP MODAL
-══════════════════════════════════ -->
+<!-- JELENTKEZÉSI FORM MODAL -->
 <div class="modal-overlay" id="form-modal">
   <div class="modal">
     <button class="modal-close" onclick="closeModal()">✕</button>
@@ -750,9 +493,7 @@
 
     <form id="jelentkezesi-form" onsubmit="submitForm(event)">
 
-      <!-- OOC -->
       <div class="form-section-title" style="background:#5c3a1e;font-size:15px;padding:10px;letter-spacing:3px">OOC – Out of Character</div>
-
       <div class="form-row">
         <div class="form-field w2"><label>Discord neved *</label><input type="text" name="discord_nev" required></div>
       </div>
@@ -779,7 +520,6 @@
         </div>
       </div>
 
-      <!-- IC -->
       <div class="form-section-title" style="background:#1a3a1a;font-size:15px;padding:10px;letter-spacing:3px;margin-top:20px">IC – In Character</div>
 
       <div class="form-section-title">Személyes Adatok *</div>
@@ -840,19 +580,13 @@
         <div class="form-field">
           <label>Vizsga típusa</label>
           <select name="vizsga1_tipus">
-            <option value="">—</option>
-            <option>Állami</option>
-            <option>STANAG</option>
-            <option>Nincs</option>
+            <option value="">—</option><option>Állami</option><option>STANAG</option><option>Nincs</option>
           </select>
         </div>
         <div class="form-field">
           <label>Foka</label>
           <select name="vizsga1_fok">
-            <option value="">—</option>
-            <option>Alap</option>
-            <option>Közép</option>
-            <option>Felső</option>
+            <option value="">—</option><option>Alap</option><option>Közép</option><option>Felső</option>
           </select>
         </div>
       </div>
@@ -861,19 +595,13 @@
         <div class="form-field">
           <label>Vizsga típusa</label>
           <select name="vizsga2_tipus">
-            <option value="">—</option>
-            <option>Állami</option>
-            <option>STANAG</option>
-            <option>Nincs</option>
+            <option value="">—</option><option>Állami</option><option>STANAG</option><option>Nincs</option>
           </select>
         </div>
         <div class="form-field">
           <label>Foka</label>
           <select name="vizsga2_fok">
-            <option value="">—</option>
-            <option>Alap</option>
-            <option>Közép</option>
-            <option>Felső</option>
+            <option value="">—</option><option>Alap</option><option>Közép</option><option>Felső</option>
           </select>
         </div>
       </div>
@@ -915,12 +643,33 @@
   </div>
 </div>
 
-<!-- ADMIN LOGIN MODAL -->
+<!-- ══ DISCORD SUCCESS MODAL ══ -->
+<div id="discord-modal">
+  <div class="discord-box">
+    <div class="discord-checkmark">✓</div>
+    <h2>Jelentkezés Beérkezett!</h2>
+    <p class="discord-text">
+      Köszönjük a jelentkezésedet!<br>
+      A következő lépés: csatlakozz a <strong>Discord szerverünkhöz</strong>,<br>
+      ahol a toborzók hamarosan felveszik veled a kapcsolatot.
+    </p>
+    <hr class="discord-divider">
+    <a class="discord-join-btn" href="https://discord.gg/fNyNaFjggT" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057c.002.022.015.043.033.054a19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028 14.09 14.09 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/>
+      </svg>
+      Csatlakozz a Discord Szerverhez
+    </a>
+    <p class="discord-close-hint" onclick="document.getElementById('discord-modal').classList.remove('active')">[ Bezárás ]</p>
+  </div>
+</div>
+
+<!-- ADMIN LOGIN -->
 <button id="admin-btn" onclick="document.getElementById('admin-login-modal').classList.add('active')" title="Admin">⚙</button>
 
 <div id="admin-login-modal">
   <div class="admin-login-box">
-    <button class="modal-close" onclick="document.getElementById('admin-login-modal').classList.remove('active')" style="position:absolute;top:12px;right:12px;background:#333;color:#fff;border:none;width:28px;height:28px;cursor:pointer;font-size:14px">✕</button>
+    <button style="position:absolute;top:12px;right:12px;background:#333;color:#fff;border:none;width:28px;height:28px;cursor:pointer;font-size:14px" onclick="document.getElementById('admin-login-modal').classList.remove('active')">✕</button>
     <h3>⬛ Admin Belépés</h3>
     <input class="admin-input" type="text" id="admin-user" placeholder="Felhasználónév">
     <input class="admin-input" type="password" id="admin-pass" placeholder="Jelszó" onkeydown="if(event.key==='Enter')adminLogin()">
@@ -945,7 +694,6 @@
       <div class="stat-card" style="border-left-color:#2d7a2d"><div class="stat-num" id="stat-ok">–</div><div class="stat-label">Elfogadva</div></div>
       <div class="stat-card" style="border-left-color:var(--red-alert)"><div class="stat-num" id="stat-no">–</div><div class="stat-label">Elutasítva</div></div>
     </div>
-
     <div class="admin-table-wrap">
       <div class="admin-table-header">
         <h2>Beérkezett Jelentkezések</h2>
@@ -956,9 +704,7 @@
           <button class="filter-btn" onclick="filterApps('elutasitva',this)">Elutasítva</button>
         </div>
       </div>
-      <div id="table-container">
-        <div class="loading">Töltés...</div>
-      </div>
+      <div id="table-container"><div class="loading">Töltés...</div></div>
     </div>
   </div>
 </div>
@@ -968,18 +714,13 @@
   <div class="detail-box" id="detail-content"></div>
 </div>
 
-<!-- TOAST -->
 <div id="toast"></div>
 
-<!-- ══════════════════════════════════
-     FIREBASE + LOGIC
-══════════════════════════════════ -->
 <script type="module">
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
 import { getFirestore, collection, addDoc, getDocs, doc, updateDoc, serverTimestamp, query, orderBy }
   from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
 
-// ── Firebase config ──
 const firebaseConfig = {
   apiKey: "AIzaSyB4gFywV-LXttgkfSTGJr3yCoq3HU4PHG0",
   authDomain: "mh-jelentkezes.firebaseapp.com",
@@ -989,32 +730,18 @@ const firebaseConfig = {
   appId: "1:946108642891:web:e44bb418cad8dc83afffce"
 };
 
-// Using localStorage as fallback if Firebase not configured
 let db = null;
 let useLocal = true;
 
 try {
   const app = initializeApp(firebaseConfig);
   db = getFirestore(app);
-  // Test if real config
-  if (firebaseConfig.apiKey === "AIzaSyDemo_ReplaceWithYours") {
-    useLocal = true;
-  } else {
-    useLocal = false;
-  }
-} catch(e) {
-  useLocal = true;
-}
+  if (firebaseConfig.apiKey !== "AIzaSyDemo_ReplaceWithYours") useLocal = false;
+} catch(e) { useLocal = true; }
 
-// ── Local storage DB fallback ──
-function getLocalDB() {
-  try { return JSON.parse(localStorage.getItem('toborzas_db') || '[]'); } catch { return []; }
-}
-function saveLocalDB(data) {
-  localStorage.setItem('toborzas_db', JSON.stringify(data));
-}
+function getLocalDB() { try { return JSON.parse(localStorage.getItem('toborzas_db') || '[]'); } catch { return []; } }
+function saveLocalDB(data) { localStorage.setItem('toborzas_db', JSON.stringify(data)); }
 
-// ── Admin auth ──
 const ADMIN_USERS = { 'WSSMH': 'WSSMH2026' };
 
 window.adminLogin = function() {
@@ -1035,18 +762,10 @@ window.adminLogout = function() {
   document.getElementById('admin-pass').value = '';
 };
 
-// ── Modal ──
-window.openModal = function() {
-  document.getElementById('form-modal').classList.add('active');
-};
-window.closeModal = function() {
-  document.getElementById('form-modal').classList.remove('active');
-};
-document.getElementById('form-modal').addEventListener('click', function(e) {
-  if (e.target === this) closeModal();
-});
+window.openModal = function() { document.getElementById('form-modal').classList.add('active'); };
+window.closeModal = function() { document.getElementById('form-modal').classList.remove('active'); };
+document.getElementById('form-modal').addEventListener('click', function(e) { if (e.target === this) closeModal(); });
 
-// ── Form submit ──
 window.submitForm = async function(e) {
   e.preventDefault();
   const fd = new FormData(e.target);
@@ -1064,7 +783,6 @@ window.submitForm = async function(e) {
     try {
       await addDoc(collection(db, 'jelentkezesek'), { ...data, idopont: serverTimestamp() });
     } catch(err) {
-      console.error(err);
       const db2 = getLocalDB();
       data.id = Date.now().toString();
       db2.push(data);
@@ -1074,16 +792,15 @@ window.submitForm = async function(e) {
 
   closeModal();
   e.target.reset();
-  showToast('✓ Jelentkezés sikeresen beküldve!');
+  // Discord modal megjelenítése
+  document.getElementById('discord-modal').classList.add('active');
 };
 
-// ── Load applications ──
 let allApps = [];
 let currentFilter = 'all';
 
 window.loadApplications = async function() {
   document.getElementById('table-container').innerHTML = '<div class="loading">Töltés...</div>';
-  
   if (useLocal) {
     allApps = getLocalDB();
   } else {
@@ -1091,11 +808,8 @@ window.loadApplications = async function() {
       const q = query(collection(db, 'jelentkezesek'), orderBy('idopont', 'desc'));
       const snap = await getDocs(q);
       allApps = snap.docs.map(d => ({ id: d.id, ...d.data() }));
-    } catch(err) {
-      allApps = getLocalDB();
-    }
+    } catch { allApps = getLocalDB(); }
   }
-
   updateStats();
   renderTable(currentFilter);
 };
@@ -1109,10 +823,7 @@ function updateStats() {
 
 function renderTable(filter) {
   const apps = filter === 'all' ? allApps : allApps.filter(a => a.statusz === filter);
-  if (!apps.length) {
-    document.getElementById('table-container').innerHTML = '<div class="loading">Nincs megjelenítendő adat.</div>';
-    return;
-  }
+  if (!apps.length) { document.getElementById('table-container').innerHTML = '<div class="loading">Nincs megjelenítendő adat.</div>'; return; }
   let html = `<table><thead><tr>
     <th>#</th><th>Név</th><th>Születési év</th><th>Jogviszony</th><th>Végzettség</th><th>Beérkezés</th><th>Státusz</th><th>Műveletek</th>
   </tr></thead><tbody>`;
@@ -1124,9 +835,7 @@ function renderTable(filter) {
     html += `<tr>
       <td style="color:var(--light-gray);font-size:11px">${i+1}</td>
       <td style="font-weight:600">${nev}</td>
-      <td>${a.szul_ev || '–'}</td>
-      <td>${a.jogviszony || '–'}</td>
-      <td>${a.vegzettseg || '–'}</td>
+      <td>${a.szul_ev||'–'}</td><td>${a.jogviszony||'–'}</td><td>${a.vegzettseg||'–'}</td>
       <td style="font-size:11px;color:var(--light-gray)">${dat}</td>
       <td><span class="badge ${badge}">${label}</span></td>
       <td>
@@ -1153,9 +862,8 @@ window.setStatus = async function(id, status) {
     const idx = db2.findIndex(a => a.id === id);
     if (idx !== -1) { db2[idx].statusz = status; saveLocalDB(db2); }
   } else {
-    try {
-      await updateDoc(doc(db, 'jelentkezesek', id), { statusz: status });
-    } catch {
+    try { await updateDoc(doc(db, 'jelentkezesek', id), { statusz: status }); }
+    catch {
       const db2 = getLocalDB();
       const idx = db2.findIndex(a => a.id === id);
       if (idx !== -1) { db2[idx].statusz = status; saveLocalDB(db2); }
@@ -1169,11 +877,10 @@ window.setStatus = async function(id, status) {
 window.showDetail = function(id) {
   const a = allApps.find(x => x.id === id);
   if (!a) return;
-  const nev = `${a.csaladi_nev || ''} ${a['utone v1'] || ''} ${a.utonev2 || ''}`.trim();
+  const nev = `${a.csaladi_nev||''} ${a['utone v1']||''} ${a.utonev2||''}`.trim();
   document.getElementById('detail-content').innerHTML = `
-    <button class="modal-close" onclick="document.getElementById('detail-modal').classList.remove('active')" style="position:absolute;top:12px;right:12px;background:var(--dark);color:#fff;border:none;width:28px;height:28px;cursor:pointer;font-size:14px">✕</button>
-    <h2>Jelentkezési Lap – ${nev || a.becenev || '–'}</h2>
-
+    <button style="position:absolute;top:12px;right:12px;background:var(--dark);color:#fff;border:none;width:28px;height:28px;cursor:pointer;font-size:14px" onclick="document.getElementById('detail-modal').classList.remove('active')">✕</button>
+    <h2>Jelentkezési Lap – ${nev||a.becenev||'–'}</h2>
     <div class="form-section-title" style="margin-top:0;background:#5c3a1e">OOC – Out of Character</div>
     <div class="detail-grid">
       <div class="detail-field"><div class="lbl">Discord</div><div class="val">${a.discord_nev||'–'}</div></div>
@@ -1183,9 +890,7 @@ window.showDetail = function(id) {
       <div class="detail-field" style="grid-column:span 2"><div class="lbl">Bemutatkozás</div><div class="val">${a.bemutatkozas||'–'}</div></div>
       <div class="detail-field" style="grid-column:span 2"><div class="lbl">RP tapasztalat</div><div class="val">${a.rp_tapasztalat||'–'}</div></div>
     </div>
-
     <div class="form-section-title" style="background:#1a3a1a">IC – In Character</div>
-
     <div class="form-section-title" style="font-size:11px;background:#2a2a2a">Személyes Adatok</div>
     <div class="detail-grid">
       <div class="detail-field"><div class="lbl">Családi név</div><div class="val">${a.csaladi_nev||'–'}</div></div>
@@ -1200,14 +905,12 @@ window.showDetail = function(id) {
       <div class="detail-field"><div class="lbl">Telefon</div><div class="val">${a.lak_tel||'–'}</div></div>
       <div class="detail-field"><div class="lbl">E-mail</div><div class="val">${a.email||'–'}</div></div>
     </div>
-
     <div class="form-section-title" style="font-size:11px;background:#2a2a2a">Végzettségi, Képzettségi Adatok</div>
     <div class="detail-grid">
       <div class="detail-field"><div class="lbl">Legmagasabb végzettség</div><div class="val">${a.vegzettseg||'–'}</div></div>
       <div class="detail-field"><div class="lbl">Szakképzettsége</div><div class="val">${a.szakkepzettseg||'–'}</div></div>
       <div class="detail-field"><div class="lbl">Gépjárm. eng. kat.</div><div class="val">${a.gj_kategoria||'–'}</div></div>
     </div>
-
     <div class="form-section-title" style="font-size:11px;background:#2a2a2a">Nyelvismeret</div>
     <div class="detail-grid">
       <div class="detail-field"><div class="lbl">1. Nyelv</div><div class="val">${a.nyelv1||'–'}</div></div>
@@ -1217,12 +920,10 @@ window.showDetail = function(id) {
       <div class="detail-field"><div class="lbl">Vizsga típusa</div><div class="val">${a.vizsga2_tipus||'–'}</div></div>
       <div class="detail-field"><div class="lbl">Foka</div><div class="val">${a.vizsga2_fok||'–'}</div></div>
     </div>
-
     <div class="form-section-title" style="font-size:11px;background:#2a2a2a">Katonai Szolgálat</div>
     <div class="detail-grid">
       <div class="detail-field"><div class="lbl">Korábbi katonai szolgálat</div><div class="val">${a.korabbi_szolg||'–'}</div></div>
     </div>
-
     <div class="form-section-title" style="font-size:11px;background:#2a2a2a">Tervezett Beosztás</div>
     <div class="detail-grid">
       <div class="detail-field"><div class="lbl">Helyőrség</div><div class="val">${a.helyorseg||'–'}</div></div>
@@ -1230,7 +931,6 @@ window.showDetail = function(id) {
       <div class="detail-field"><div class="lbl">Jogviszony</div><div class="val">${a.jogviszony||'–'}</div></div>
       <div class="detail-field"><div class="lbl">Beosztás</div><div class="val">${a.beosztás||'–'}</div></div>
     </div>
-
     <div class="detail-actions">
       <button class="btn-approve" onclick="setStatus('${a.id}','elfogadva')">✓ Elfogad</button>
       <button class="btn-reject" onclick="setStatus('${a.id}','elutasitva')">✕ Elutasít</button>
@@ -1240,7 +940,6 @@ window.showDetail = function(id) {
   document.getElementById('detail-modal').classList.add('active');
 };
 
-// ── Toast ──
 window.showToast = function(msg) {
   const t = document.getElementById('toast');
   t.textContent = msg;
